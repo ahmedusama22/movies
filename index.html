@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="loading position-fixed top-0 end-0 start-0 bottom-0 bg-black d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+ <div class="bg-black p-5">
+    <aside class="bg-black min-vh-100">
+        <ul class="list-unstyled p-3 ms-3 text-white">
+            <li><a data-name="now_playing" class="mt-1 scroll pb-2">Now playing</a></li>
+            <li><a data-name="popular" class="mt-1 scroll pb-2">Popular</a></li>
+            <li><a data-name="top_rated" class="mt-1 scroll pb-2">Top Rated</a></li>
+            <li><a data-name="trending" class="mt-1 scroll pb-2">Trending</a></li>
+            <li><a data-name="upcoming" class="mt-1 scroll pb-2">Up coming</a></li>
+            <li><a data-name="contact" href="#contact" class="mt-1 pb-2">Contact Us</a></li>
+        </ul>
+        <div class ="icon p-3  text-white position-absolute ">
+           <a href=""><i class="fa-brands fa-facebook ms-1  text-white"></i></a> 
+            <a href=""><i class="fa-brands fa-twitter ms-1"></i></a>
+            <a href=""><i class="fa-brands fa-instagram ms-1"></i></a>
+            <div class ="text" >
+                <p>Copyright @ 2022. All rights reserved.</p>
+                <p>created by: <span class="text-danger">ahmed Usama</span></p>
+            </div>
+        </div>
+    </aside>
+    <div>
+        <div class="aside min-vh-100 position-fixed start-0 top-0 bg-body">
+            <div class ="logo ms-3 mt-4">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <br>
+            <br>
+            <br><br><br>
+            <div class="menu ms-3 position-absolute">
+                <i class="sh fa-solid fa-bars"></i>
+                <i class="hi d-none fa-solid fa-xmark"></i>
+                <div class="icon2 position-absolute ">
+                    <br>
+                    <br><br><br><br><br><br><br>
+                    <i class="fa-solid fa-globe fs-5"></i>
+                    <i class="fa-solid fa-share-nodes fs-5"></i>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+
+       <section>
+         <div class="container">
+            <div class="inputs ">
+                <input type="search"  name="search" id="search" class="searchByName form-control shadow-none w-50 mx-auto bg-transparent rounded-pill text-white px-3 border-white" placeholder="Search">
+            </div>
+            <div class="row new-Container g-4 mt-5" id="movies">
+               
+               
+            </div>
+        
+                
+               
+         </div>
+       </section>
+       
+<section>
+    <div class="container mt-3">
+        <div class="contact-me" id="contact" >
+            <h2 class="text-white">Contact Us</h2>
+            <form action="">
+                <div class="row mt-3 g-3">
+                    <div class="col-md-6">
+                        <input type="text" oninput="validate(regexNamebookmark,inputName)" required class="form-control text-center rounded-0 shadow-none w-100 bg-transparent border-end-0 border-top-0 border-start-0  text-white px-3 border-white" placeholder="Enter Your Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" oninput="validate(regexEmail,inputEmail)" required class="form-control text-center rounded-0 shadow-none w-100 bg-transparent border-end-0 border-top-0 border-start-0   text-white px-3 border-white" placeholder="Enter Your Email">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="phone" oninput="validate(regexPhone,inputPhone)" required class="form-control text-center  rounded-0 shadow-none w-100 bg-transparent border-end-0 border-top-0 border-start-0   text-white px-3 border-white" placeholder="Enter Your Phone">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="age" oninput="validate(regexAge,inputAge)" required class="form-control rounded-0 text-center shadow-none w-100 bg-transparent border-end-0 border-top-0 border-start-0   text-white px-3 border-white" placeholder="Enter Your Age">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" oninput="validate(regexPassword,inputPassword)" required class="form-control text-center rounded-0 shadow-none w-100 bg-transparent border-end-0 border-top-0 border-start-0  text-white px-3 border-white" placeholder="Password">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" required class="form-control text-center rounded-0 shadow-none w-100 bg-transparent border-end-0 border-top-0 border-start-0   text-white px-3 border-white" placeholder="Re-Enter Password">
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class=" btn btn-dark text-white">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+       </div>
+</section>
+
+
+  </div>
+     
+  
+
+
+
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
